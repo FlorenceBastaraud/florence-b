@@ -1,9 +1,9 @@
-"use client";
+"use client"
 
-import { useLang, Lang } from "@/context/LangContext";
+import { Lang, useLang } from "@/context/LangContext"
 
 export default function LangSwitch() {
-  const { lang, setLang } = useLang();
+  const { lang, setLang } = useLang()
 
   return (
     <div
@@ -19,7 +19,10 @@ export default function LangSwitch() {
       }}
     >
       {(["en", "fr"] as Lang[]).map((l, i) => (
-        <span key={l} style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}>
+        <span
+          key={l}
+          style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
+        >
           {i > 0 && <span style={{ color: "#3a3a3a" }}>/</span>}
           <button
             onClick={() => setLang(l)}
@@ -33,11 +36,13 @@ export default function LangSwitch() {
               padding: 0,
             }}
             onMouseEnter={(e) => {
-              if (lang !== l) (e.currentTarget as HTMLElement).style.color = "rgba(245,240,235,0.7)";
+              if (lang !== l)
+                (e.currentTarget as HTMLElement).style.color =
+                  "rgba(245,240,235,0.7)"
             }}
             onMouseLeave={(e) => {
-              (e.currentTarget as HTMLElement).style.color =
-                lang === l ? "var(--accent)" : "rgba(245,240,235,0.35)";
+              ;(e.currentTarget as HTMLElement).style.color =
+                lang === l ? "var(--accent)" : "rgba(245,240,235,0.35)"
             }}
           >
             {l}
@@ -45,5 +50,5 @@ export default function LangSwitch() {
         </span>
       ))}
     </div>
-  );
+  )
 }

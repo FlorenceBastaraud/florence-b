@@ -1,6 +1,6 @@
 # Mon site personnel
 
-Développeuse Front-End, j'ai créé ce portfolio pour présenter mes projets et mon univers, où l'esthétique se marie à la fonctionnalité avec personnalité.
+Développeuse Front-End, j'ai créé ce portfolio pour présenter mes projets et mon univers, où l'esthétique se marie à la fonctionnalité.
 
 ## Stack
 
