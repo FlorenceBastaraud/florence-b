@@ -28,7 +28,15 @@ export default function Skills() {
       .then((data) => setSkills(data[lang]))
   }, [lang])
 
-  if (!skills) return <section id="skills" ref={sectionRef} className="section" style={{ minHeight: "100vh" }} />
+  if (!skills)
+    return (
+      <section
+        id="skills"
+        ref={sectionRef}
+        className="section"
+        style={{ minHeight: "100vh" }}
+      />
+    )
 
   const categories = [
     { key: "front", label: "Front-end", items: skills.front },
@@ -37,11 +45,16 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" ref={sectionRef} className="section" style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
+    <section
+      id="skills"
+      ref={sectionRef}
+      className="section"
+      style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+    >
       <div className="container">
         <div style={{ marginBottom: "3rem" }}>
           <span className="text-[10px] tracking-[0.25em] uppercase text-[var(--accent)] font-semibold">
-            02 / {t("skills")}
+            03 / {t("skills")}
           </span>
           <h2
             className="font-[family-name:var(--font-instrument)] text-[clamp(1.8rem,4vw,3rem)] italic text-[var(--fg)]"

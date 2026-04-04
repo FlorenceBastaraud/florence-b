@@ -1,20 +1,23 @@
-"use client";
+"use client"
 
-import { useRef } from "react";
-import { useLang } from "@/context/LangContext";
-import { useGsapReveal } from "@/hooks/useGsapReveal";
+import { useLang } from "@/context/LangContext"
+import { useGsapReveal } from "@/hooks/useGsapReveal"
+import { useRef } from "react"
 
 export default function Sequotec() {
-  const { t } = useLang();
-  const sectionRef = useRef<HTMLElement>(null);
-  useGsapReveal(sectionRef);
+  const { t } = useLang()
+  const sectionRef = useRef<HTMLElement>(null)
+  useGsapReveal(sectionRef)
 
   return (
-    <section id="agency" ref={sectionRef} className="section" style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}>
+    <section
+      id="agency"
+      ref={sectionRef}
+      className="section"
+      style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
+    >
       <div className="container">
-
         <div className="grid md:grid-cols-[1fr_2fr] gap-12 md:gap-20 items-start">
-
           {/* Label */}
           <div>
             <span className="text-[10px] tracking-[0.25em] uppercase text-[var(--accent)] font-semibold">
@@ -51,19 +54,28 @@ export default function Sequotec() {
                   textDecoration: "none",
                   transition: "background 0.3s",
                 }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "var(--accent-dim)")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "var(--accent)")}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.background = "var(--accent-dim)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.background = "var(--accent)")
+                }
               >
                 {t("agency-cta")}
                 <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
-                  <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                  <path
+                    d="M1 7h12M7 1l6 6-6 6"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
                 </svg>
               </a>
             </div>
           </div>
         </div>
-
       </div>
     </section>
-  );
+  )
 }
