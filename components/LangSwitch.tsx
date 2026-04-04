@@ -26,7 +26,7 @@ export default function LangSwitch() {
         gap: "0.25rem",
         fontSize: "0.75rem",
         marginLeft: isMobile ? "1rem" : undefined,
-        padding: isMobile ? "0.25rem 0" : undefined,
+        padding: isMobile ? "0.10rem 0" : undefined,
       }}
     >
       {(["en", "fr"] as Lang[]).map((l, i) => (
