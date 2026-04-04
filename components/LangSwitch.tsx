@@ -1,21 +1,32 @@
 "use client"
 
 import { Lang, useLang } from "@/context/LangContext"
+import { useEffect, useState } from "react"
 
 export default function LangSwitch() {
   const { lang, setLang } = useLang()
+  const [isMobile, setIsMobile] = useState(false)
+
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth < 768)
+    checkMobile()
+    window.addEventListener("resize", checkMobile)
+    return () => window.removeEventListener("resize", checkMobile)
+  }, [])
 
   return (
     <div
       style={{
-        position: "fixed",
-        top: "1.1rem",
-        right: "1.5rem",
-        zIndex: 60,
+        position: isMobile ? "static" : "fixed",
+        top: isMobile ? undefined : "1.1rem",
+        right: isMobile ? undefined : "1.5rem",
+        zIndex: isMobile ? undefined : 60,
         display: "flex",
         alignItems: "center",
         gap: "0.25rem",
         fontSize: "0.75rem",
+        marginLeft: isMobile ? "1rem" : undefined,
+        padding: isMobile ? "0.25rem 0" : undefined,
       }}
     >
       {(["en", "fr"] as Lang[]).map((l, i) => (
