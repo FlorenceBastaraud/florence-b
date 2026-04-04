@@ -1,0 +1,301 @@
+{
+  "total": 6,
+  "data": {
+    "en": [
+      {
+        "name": "SwiftRide",
+        "type": "e-commerce",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/swiftride",
+        "description": "Full e-commerce platform dedicated to board sports equipment: skateboards, rollerblades, bikes. Built with a headless CMS (Strapi) for content management, Stripe for payments, and a custom Next.js storefront. Includes product catalog, cart, checkout flow, and order management.",
+        "thumbnail": "swiftride-full.png",
+        "technologies": {
+          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
+          "tags": [
+            "html",
+            "css",
+            "tailwind",
+            "typescript",
+            "nextjs",
+            "strapi",
+            "stripe"
+          ]
+        }
+      },
+      {
+        "name": "This.",
+        "type": "portfolio",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/mywebsite",
+        "description": "My personal website, the one you are currently browsing. Designed and built from scratch as a showcase of my front-end skills. Features a dark minimal aesthetic, GSAP animations, bilingual support (EN/FR), and a project modal system.",
+        "thumbnail": "mywebsite.png",
+        "technologies": {
+          "string": "Html, Sass, Javascript",
+          "tags": ["html", "css", "sass", "javascript"]
+        }
+      },
+      {
+        "name": "Zobbies",
+        "type": "social",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/zobbies",
+        "description": "Hobby-based social network with a full authentication system and real-time multi-user channels powered by Socket.io. Users can create a profile, join interest-based rooms, and chat live with others. Built with vanilla JavaScript on the front-end and Express on the back-end.",
+        "thumbnail": "zobbies.png",
+        "technologies": {
+          "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
+          "tags": [
+            "html",
+            "css",
+            "sass",
+            "javascript",
+            "express",
+            "node",
+            "socket-io"
+          ]
+        }
+      },
+      {
+        "name": "DiceFall",
+        "type": "game",
+        "link": "https://florencebastaraud.github.io/dicefall/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/dicefall",
+        "description": "Browser-based dice game built with React. Roll 10 virtual dice and try to get them all to show the same number to win. Features smooth animations, game state management, and a clean minimalist UI.",
+        "thumbnail": "dicefall.png",
+        "technologies": {
+          "string": "ReactJs, Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript", "react"]
+        }
+      },
+      {
+        "name": "LibraryBlooms",
+        "type": "app",
+        "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/libraryblooms",
+        "description": "A digital reading platform that generates a random selection of books based on chosen genres. Users can email the list to themselves or to friends directly from the app. Built with React and TypeScript, with GSAP-powered transitions for a polished feel.",
+        "thumbnail": "libraryblooms.png",
+        "technologies": {
+          "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
+          "tags": ["html", "sass", "typescript", "react", "gsap"]
+        }
+      },
+      {
+        "name": "ChuckMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Marketing landing page for a sneakers brand concept. Focuses on visual storytelling with strong typography, scroll-based layout, and attention to detail in the product presentation. Pure HTML, CSS and JavaScript, no framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      }
+    ],
+    "fr": [
+      {
+        "name": "SwiftRide",
+        "type": "e-commerce",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/swiftride",
+        "description": "Plateforme e-commerce complète dédiée aux équipements de sport de glisse: skateboards, rollers, vélos. Construit avec un CMS headless (Strapi), Stripe pour les paiements, et un storefront Next.js sur mesure. Inclut catalogue produit, panier, tunnel de commande et gestion des commandes.",
+        "thumbnail": "swiftride-full.png",
+        "technologies": {
+          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
+          "tags": [
+            "html",
+            "css",
+            "tailwind",
+            "typescript",
+            "nextjs",
+            "strapi",
+            "stripe"
+          ]
+        }
+      },
+      {
+        "name": "Ce site.",
+        "type": "portfolio",
+        "link": "",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/mywebsite",
+        "description": "Mon site personnel, celui que vous parcourez en ce moment. Conçu et développé de zéro comme vitrine de mes compétences front-end. Design sombre et minimaliste, animations GSAP, support bilingue EN/FR et système de modales pour les projets.",
+        "thumbnail": "mywebsite.png",
+        "technologies": {
+          "string": "Html, Sass, Javascript",
+          "tags": ["html", "css", "sass", "javascript"]
+        }
+      },
+      {
+        "name": "Zobbies",
+        "type": "social",
+        "link": null,
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/zobbies",
+        "description": "Réseau social basé sur les centres d'intérêts, avec système d'authentification complet et channels de discussion en temps réel via Socket.io. Les utilisateurs peuvent créer un profil, rejoindre des salons thématiques et discuter en direct. Front en JavaScript vanilla, back en Express.",
+        "thumbnail": "zobbies.png",
+        "technologies": {
+          "string": "Vanilla Javascript, Sass, Html, Express, Socket.io",
+          "tags": [
+            "html",
+            "css",
+            "sass",
+            "javascript",
+            "express",
+            "node",
+            "socket-io"
+          ]
+        }
+      },
+      {
+        "name": "DiceFall",
+        "type": "game",
+        "link": "https://florencebastaraud.github.io/dicefall/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/dicefall",
+        "description": "Jeu de dés en navigateur développé avec React. Lancez 10 dés virtuels et essayez d'obtenir le même chiffre sur tous pour gagner. Animations fluides, gestion de l'état du jeu et interface épurée.",
+        "thumbnail": "dicefall.png",
+        "technologies": {
+          "string": "ReactJs, Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript", "react"]
+        }
+      },
+      {
+        "name": "LibraryBlooms",
+        "type": "app",
+        "link": "https://florencebastaraud.github.io/libraryblooms/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/libraryblooms",
+        "description": "Plateforme de lecture numérique qui génère une sélection aléatoire de livres selon les genres choisis. Les utilisateurs peuvent s'envoyer la liste par email ou la partager avec des amis. Développé en React et TypeScript, avec des transitions GSAP pour une expérience soignée.",
+        "thumbnail": "libraryblooms.png",
+        "technologies": {
+          "string": "Html/Sass, TypeScript, ReactJs, Gsap.",
+          "tags": ["html", "sass", "typescript", "react", "gsap"]
+        }
+      },
+      {
+        "name": "ChuckMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChuckzzezterMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChuczegfgrkMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChuezerzeckMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChurrzczerkMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChuerzerckManrria",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChuerzckManzrzeria",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChrfruzetrzrtckMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      },
+      {
+        "name": "ChddueeeeckMania",
+        "type": "landing page",
+        "link": "https://florencebastaraud.github.io/converses-landing-page/",
+        "demo": null,
+        "github": "https://github.com/FlorenceBastaraud/converses-landing-page",
+        "description": "Landing page marketing pour un concept de marque de sneakers. Accent sur le storytelling visuel avec une typographie forte, un layout à défilement et une présentation soignée des produits. HTML, CSS et JavaScript pur, sans framework.",
+        "thumbnail": "converses-landing-page.png",
+        "technologies": {
+          "string": "Javascript, Html, Css.",
+          "tags": ["html", "css", "javascript"]
+        }
+      }
+    ]
+  }
+}

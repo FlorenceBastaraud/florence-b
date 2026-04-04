@@ -1,0 +1,22 @@
+{
+  "en": {
+    "front": [
+      "Html, Css",
+      "Sass, Tailwind",
+      "Javascript, TypeScript",
+      "ReactJs, NextJs, VueJs"
+    ],
+    "back": ["NodeJs, ExpressJs, NextJs", "Php", "Sql, MySql", "MongoDB"],
+    "more": ["Git", "Testing", "Accessibility", "Regex"]
+  },
+  "fr": {
+    "front": [
+      "Html, Css",
+      "Sass, Tailwind",
+      "Javascript, TypeScript",
+      "ReactJs, NextJs, VueJs"
+    ],
+    "back": ["NodeJs, ExpressJs, NextJs", "Php", "Sql, MySql", "MongoDB"],
+    "more": ["Git", "Tests", "Accessibilité", "Regex"]
+  }
+}
