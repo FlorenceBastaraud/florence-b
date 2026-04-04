@@ -30,7 +30,7 @@ export default function Career() {
           <div className="relative grid md:grid-cols-[1fr_auto] items-center gap-8" style={{ padding: "3rem" }}>
             <div>
               <span className="text-[10px] tracking-[0.25em] uppercase text-[var(--accent)] font-semibold" style={{ display: "block", marginBottom: "0.75rem" }}>
-                03 / {t("career")}
+                04 / {t("career")}
               </span>
               <h2 className="font-[family-name:var(--font-instrument)] text-[clamp(1.8rem,4vw,3rem)] italic text-[var(--fg)] max-w-md leading-tight" style={{ marginTop: "0.75rem" }}>
                 {t("career-title")}
