@@ -1,20 +1,20 @@
 {
   "en": {
     "front": [
-      "Html · Css",
-      "Sass · Tailwind CSS",
-      "JavaScript · TypeScript",
-      "React · Next.js · Vue.js"
+      "Next.js · React · Vue.js",
+      "TypeScript · JavaScript",
+      "Sass · Tailwind CSS · GSAP",
+      "Html · Css"
     ],
     "back": ["Node.js · Express.js", "SQL · MySQL", "MongoDB"],
     "more": ["Git · GitHub", "Testing (unit · e2e)", "Web Accessibility"]
   },
   "fr": {
     "front": [
-      "Html · Css",
-      "Sass · Tailwind CSS",
-      "JavaScript · TypeScript",
-      "React · Next.js · Vue.js"
+      "Next.js · React · Vue.js",
+      "TypeScript · JavaScript",
+      "Sass · Tailwind CSS · GSAP",
+      "Html · Css"
     ],
     "back": ["Node.js · Express.js", "SQL · MySQL", "MongoDB"],
     "more": ["Git · GitHub", "Tests (unit · e2e)", "Accessibilité web"]

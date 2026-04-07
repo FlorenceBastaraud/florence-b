@@ -11,7 +11,7 @@ const navItems = [
   { key: "agency", href: "/#agency", sectionId: "agency" },
   { key: "skills", href: "/#skills", sectionId: "skills" },
   { key: "career", href: "/#career", sectionId: "career" },
-  { key: "projects", href: "/projects", sectionId: null },
+  { key: "projects", href: "/projets", sectionId: null },
 ]
 
 export default function Header() {
@@ -51,7 +51,7 @@ export default function Header() {
   }, [pathname])
 
   const isActive = (item: (typeof navItems)[0]) => {
-    if (item.href === "/projects") return pathname === "/projects"
+    if (item.href === "/projets") return pathname === "/projets"
     if (pathname !== "/") return false
     return activeSection === item.sectionId
   }
