@@ -29,7 +29,7 @@ export default function LangSwitch() {
         padding: isMobile ? "0.10rem 0" : undefined,
       }}
     >
-      {(["en", "fr"] as Lang[]).map((l, i) => (
+      {(["fr", "en"] as Lang[]).map((l, i) => (
         <span
           key={l}
           style={{ display: "flex", alignItems: "center", gap: "0.25rem" }}
