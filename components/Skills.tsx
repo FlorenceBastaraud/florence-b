@@ -5,15 +5,15 @@ import { useGsapReveal } from "@/hooks/useGsapReveal"
 import { useEffect, useRef, useState } from "react"
 
 interface SkillsData {
-  front: string[]
-  back: string[]
-  more: string[]
+  dev: string[]
+  practices: string[]
+  tools: string[]
 }
 
 const categoryColors: Record<string, string> = {
-  front: "var(--accent)",
-  back: "#7dd3fc",
-  more: "#c4b5fd",
+  dev: "var(--accent)",
+  practices: "#c4b5fd",
+  tools: "#7dd3fc",
 }
 
 export default function Skills() {
@@ -39,9 +39,9 @@ export default function Skills() {
     )
 
   const categories = [
-    { key: "front", label: "Front-end", items: skills.front },
-    { key: "back", label: "Back-end", items: skills.back },
-    { key: "more", label: t("skills-more"), items: skills.more },
+    { key: "dev", label: t("skills-dev"), items: skills.dev },
+    { key: "practices", label: t("skills-practices"), items: skills.practices },
+    { key: "tools", label: t("skills-tools"), items: skills.tools },
   ]
 
   return (

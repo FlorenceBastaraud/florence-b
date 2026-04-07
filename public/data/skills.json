@@ -1,22 +1,52 @@
 {
   "en": {
-    "front": [
+    "dev": [
       "Next.js · React · Vue.js",
-      "TypeScript · JavaScript",
+      "TypeScript · JavaScript · PHP",
       "Sass · Tailwind CSS · GSAP",
-      "Html · Css"
+      "HTML · CSS"
     ],
-    "back": ["Node.js · Express.js", "SQL · MySQL", "MongoDB"],
-    "more": ["Git · GitHub", "Testing (unit · e2e)", "Web Accessibility"]
+    "practices": [
+      "Version control (Git, GitHub)",
+      "Testing (unit, e2e)",
+      "Web accessibility (a11y)",
+      "Performance · Optimization · Maintenance",
+      "SEO"
+    ],
+    "tools": [
+      "Figma",
+      "Sanity · PrestaShop (headless / custom theme)",
+      "Stripe",
+      "Vercel · Render",
+      "Brevo",
+      "Calendly",
+      "UptimeRobot",
+      "Google Analytics · Google Tag Manager"
+    ]
   },
   "fr": {
-    "front": [
+    "dev": [
       "Next.js · React · Vue.js",
-      "TypeScript · JavaScript",
+      "TypeScript · JavaScript · PHP",
       "Sass · Tailwind CSS · GSAP",
-      "Html · Css"
+      "HTML · CSS"
     ],
-    "back": ["Node.js · Express.js", "SQL · MySQL", "MongoDB"],
-    "more": ["Git · GitHub", "Tests (unit · e2e)", "Accessibilité web"]
+    "practices": [
+      "Versioning (Git, GitHub)",
+      "Tests (unitaires, e2e)",
+      "Accessibilité web (a11y)",
+      "Performance · Optimisation · Maintenance",
+      "SEO"
+    ],
+    "tools": [
+      "Figma",
+      "Sanity · PrestaShop (headless / thème personnalisé)",
+      "Stripe",
+      "Vercel · Render",
+      "Brevo",
+      "Calendly",
+      "UptimeRobot",
+      "Google Analytics · Google Tag Manager"
+    ]
   }
 }
