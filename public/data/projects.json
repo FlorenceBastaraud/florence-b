@@ -32,8 +32,8 @@
         "description": "My personal website, the one you are currently browsing. Features a dark minimal aesthetic, lightweight animations, project filtes, projet modal system, language switcher, custom cursor and responsive design.",
         "thumbnail": "mywebsite.png",
         "technologies": {
-          "string": "Html, Sass, Javascript",
-          "tags": ["html", "css", "sass", "javascript"]
+          "string": "Next.js 16, TypeScript, Tailwind CSS et GSAP.",
+          "tags": ["tailwind", "typescript", "nextjs", "gsap"]
         }
       },
       {
