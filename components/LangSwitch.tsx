@@ -21,7 +21,7 @@ export default function LangSwitch() {
         top: isMobile ? undefined : "1.1rem",
         right: isMobile ? undefined : "1.5rem",
         zIndex: isMobile ? undefined : 60,
-        display: "flex",
+        display: isMobile ? "none" : "flex",
         alignItems: "center",
         gap: "0.25rem",
         fontSize: "0.75rem",
