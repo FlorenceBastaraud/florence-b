@@ -1,10 +1,10 @@
 {
   "en": {
     "front": [
-      "Html · Css",
+      "Next.js · React · Vue.js",
+      "TypeScript · JavaScript",
       "Sass · Tailwind CSS",
-      "JavaScript · TypeScript",
-      "React · Next.js · Vue.js"
+      "Html · Css"
     ],
     "back": ["Node.js · Express.js", "SQL · MySQL", "MongoDB"],
     "more": ["Git · GitHub", "Testing (unit · e2e)", "Web Accessibility"]

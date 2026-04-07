@@ -1,55 +1,63 @@
-"use client";
+/* eslint-disable @next/next/no-html-link-for-pages */
+"use client"
 
-import { useEffect, useRef } from "react";
-import { useLang } from "@/context/LangContext";
-import { gsap } from "gsap";
+import { useLang } from "@/context/LangContext"
+import { gsap } from "gsap"
+import { useEffect, useRef } from "react"
 
 export default function Hero() {
-  const { t } = useLang();
-  const containerRef = useRef<HTMLDivElement>(null);
-  const firstNameRef = useRef<HTMLSpanElement>(null);
-  const lastNameRef = useRef<HTMLSpanElement>(null);
-  const titleRef = useRef<HTMLParagraphElement>(null);
-  const ctaRef = useRef<HTMLDivElement>(null);
+  const { t } = useLang()
+  const containerRef = useRef<HTMLDivElement>(null)
+  const firstNameRef = useRef<HTMLSpanElement>(null)
+  const lastNameRef = useRef<HTMLSpanElement>(null)
+  const titleRef = useRef<HTMLParagraphElement>(null)
+  const ctaRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      const tl = gsap.timeline({ delay: 0.2 });
+      const tl = gsap.timeline({ delay: 0.2 })
 
       tl.fromTo(
         firstNameRef.current,
         { y: 100, opacity: 0, skewY: 5 },
-        { y: 0, opacity: 1, skewY: 0, duration: 1, ease: "power3.out" }
+        { y: 0, opacity: 1, skewY: 0, duration: 1, ease: "power3.out" },
       )
         .fromTo(
           lastNameRef.current,
           { y: 100, opacity: 0, skewY: 5 },
           { y: 0, opacity: 1, skewY: 0, duration: 1, ease: "power3.out" },
-          "-=0.7"
+          "-=0.7",
         )
         .fromTo(
           titleRef.current,
           { opacity: 0, x: -16 },
           { opacity: 1, x: 0, duration: 0.7, ease: "power2.out" },
-          "-=0.3"
+          "-=0.3",
         )
         .fromTo(
           ctaRef.current,
           { opacity: 0, y: 12 },
           { opacity: 1, y: 0, duration: 0.6, ease: "power2.out" },
-          "-=0.2"
-        );
-    }, containerRef);
+          "-=0.2",
+        )
+    }, containerRef)
 
-    return () => ctx.revert();
-  }, []);
+    return () => ctx.revert()
+  }, [])
 
   return (
     <section
       id="hero"
       ref={containerRef}
       className="relative overflow-hidden"
-      style={{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center", paddingTop: "5rem", paddingBottom: "4rem" }}
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        paddingTop: "5rem",
+        paddingBottom: "4rem",
+      }}
     >
       {/* Background grid */}
       <div
@@ -100,23 +108,62 @@ export default function Hero() {
             {t("hero-work-title")}
           </p>
 
-          <div ref={ctaRef} style={{ opacity: 0, display: "flex", alignItems: "center", gap: "1.5rem" }}>
+          <div
+            ref={ctaRef}
+            style={{
+              opacity: 0,
+              display: "flex",
+              alignItems: "center",
+              gap: "1.5rem",
+            }}
+          >
             <a
-              href="/projects"
-              style={{ display: "inline-flex", alignItems: "center", gap: "0.5rem", padding: "0.625rem 1.375rem", border: "1px solid rgba(245,240,235,0.2)", borderRadius: "9999px", fontSize: "0.875rem", color: "var(--fg)", textDecoration: "none", transition: "border-color 0.3s, color 0.3s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--accent)"; e.currentTarget.style.color = "var(--accent)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "rgba(245,240,235,0.2)"; e.currentTarget.style.color = "var(--fg)"; }}
+              href="/projets"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "0.5rem",
+                padding: "0.625rem 1.375rem",
+                border: "1px solid rgba(245,240,235,0.2)",
+                borderRadius: "9999px",
+                fontSize: "0.875rem",
+                color: "var(--fg)",
+                textDecoration: "none",
+                transition: "border-color 0.3s, color 0.3s",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.borderColor = "var(--accent)"
+                e.currentTarget.style.color = "var(--accent)"
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.borderColor = "rgba(245,240,235,0.2)"
+                e.currentTarget.style.color = "var(--fg)"
+              }}
             >
               {t("projects")}
               <svg width="13" height="13" viewBox="0 0 14 14" fill="none">
-                <path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+                <path
+                  d="M1 7h12M7 1l6 6-6 6"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
               </svg>
             </a>
             <a
               href="/#about"
-              style={{ fontSize: "0.875rem", color: "rgba(245,240,235,0.35)", textDecoration: "underline", textUnderlineOffset: "4px", transition: "color 0.3s" }}
+              style={{
+                fontSize: "0.875rem",
+                color: "rgba(245,240,235,0.35)",
+                textDecoration: "underline",
+                textUnderlineOffset: "4px",
+                transition: "color 0.3s",
+              }}
               onMouseEnter={(e) => (e.currentTarget.style.color = "var(--fg)")}
-              onMouseLeave={(e) => (e.currentTarget.style.color = "rgba(245,240,235,0.35)")}
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.color = "rgba(245,240,235,0.35)")
+              }
             >
               {t("about")}
             </a>
@@ -130,5 +177,5 @@ export default function Hero() {
         <div className="w-px h-10 bg-gradient-to-b from-[var(--fg)]/25 to-transparent" />
       </div>
     </section>
-  );
+  )
 }
