@@ -29,7 +29,7 @@
         "link": null,
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
-        "description": "My personal website, the one you are currently browsing. Designed and built from scratch as a showcase of my front-end skills. Features a dark minimal aesthetic, GSAP animations, bilingual support (EN/FR), and a project modal system.",
+        "description": "My personal website, the one you are currently browsing. Features a dark minimal aesthetic, lightweight animations, project filtes, projet modal system, language switcher, custom cursor and responsive design.",
         "thumbnail": "mywebsite.png",
         "technologies": {
           "string": "Html, Sass, Javascript",
@@ -125,11 +125,11 @@
         "link": "",
         "demo": null,
         "github": "https://github.com/FlorenceBastaraud/mywebsite",
-        "description": "Mon site personnel, celui que vous parcourez en ce moment. Conçu et développé de zéro comme vitrine de mes compétences front-end. Design sombre et minimaliste, animations GSAP, support bilingue EN/FR et système de modales pour les projets.",
+        "description": "Mon site web personnel, celui que vous consultez actuellement. Il présente une esthétique minimaliste sombre, des animations légères, des filtres de projet, un système de modales pour les projets, un sélecteur de langue, un curseur personnalisé et un design adaptatif.",
         "thumbnail": "mywebsite.png",
         "technologies": {
-          "string": "Html, Sass, Javascript",
-          "tags": ["html", "css", "sass", "javascript"]
+          "string": "Next.js 16, TypeScript, Tailwind CSS et GSAP.",
+          "tags": ["tailwind", "typescript", "nextjs", "gsap"]
         }
       },
       {
