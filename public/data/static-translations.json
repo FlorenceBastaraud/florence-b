@@ -36,7 +36,11 @@
     "filter-game": "game",
     "filter-landing page": "landing page",
     "filter-portfolio": "portfolio",
-    "filter-social": "social"
+    "filter-social": "social",
+    "cta-projects-title": "In my free time..",
+    "cta-projects-sub": "... I enjoy coding personal projects. Here are ",
+    "cta-projects-btn": "Browse projects",
+    "cta-projects-link": "a few of them."
   },
   "fr": {
     "site-title": "Florence Bastaraud · Développeuse Front-End & Fondatrice",
@@ -75,6 +79,10 @@
     "filter-game": "jeu",
     "filter-landing page": "landing page",
     "filter-portfolio": "portfolio",
-    "filter-social": "social"
+    "filter-social": "social",
+    "cta-projects-title": "Dans mon temps libre..",
+    "cta-projects-sub": "... j'aime coder des projets personnels. En voici ",
+    "cta-projects-btn": "Voir les projets",
+    "cta-projects-link": "quelques-uns."
   }
 }

@@ -12,16 +12,6 @@
       "Web accessibility (a11y)",
       "Performance · Optimization · Maintenance",
       "SEO"
-    ],
-    "tools": [
-      "Figma",
-      "Sanity · PrestaShop (headless / custom theme)",
-      "Stripe",
-      "Vercel · Render",
-      "Brevo",
-      "Calendly",
-      "UptimeRobot",
-      "Google Analytics · Google Tag Manager"
     ]
   },
   "fr": {
@@ -32,21 +22,11 @@
       "HTML · CSS"
     ],
     "practices": [
-      "Versioning (Git, GitHub)",
+      "Gestion de versions (Git, GitHub)",
       "Tests (unitaires, e2e)",
       "Accessibilité web (a11y)",
       "Performance · Optimisation · Maintenance",
       "SEO"
-    ],
-    "tools": [
-      "Figma",
-      "Sanity · PrestaShop (headless / thème personnalisé)",
-      "Stripe",
-      "Vercel · Render",
-      "Brevo",
-      "Calendly",
-      "UptimeRobot",
-      "Google Analytics · Google Tag Manager"
     ]
   }
 }
