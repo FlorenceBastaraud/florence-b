@@ -1,28 +1,7 @@
 {
-  "total": 6,
+  "total": 5,
   "data": {
     "en": [
-      {
-        "name": "SwiftRide",
-        "type": "e-commerce",
-        "link": null,
-        "demo": null,
-        "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "Full e-commerce platform dedicated to board sports equipment: skateboards, rollerblades, bikes. Built with a headless CMS (Strapi) for content management, Stripe for payments, and a custom Next.js storefront. Includes product catalog, cart, checkout flow, and order management.",
-        "thumbnail": "swiftride-full.png",
-        "technologies": {
-          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
-          "tags": [
-            "html",
-            "css",
-            "tailwind",
-            "typescript",
-            "nextjs",
-            "strapi",
-            "stripe"
-          ]
-        }
-      },
       {
         "name": "This.",
         "type": "portfolio",
@@ -98,27 +77,6 @@
       }
     ],
     "fr": [
-      {
-        "name": "SwiftRide",
-        "type": "e-commerce",
-        "link": null,
-        "demo": null,
-        "github": "https://github.com/FlorenceBastaraud/swiftride",
-        "description": "Plateforme e-commerce complète dédiée aux équipements de sport de glisse: skateboards, rollers, vélos. Construit avec un CMS headless (Strapi), Stripe pour les paiements, et un storefront Next.js sur mesure. Inclut catalogue produit, panier, tunnel de commande et gestion des commandes.",
-        "thumbnail": "swiftride-full.png",
-        "technologies": {
-          "string": "NextJs, Typescript, Tailwind, Strapi, Stripe.",
-          "tags": [
-            "html",
-            "css",
-            "tailwind",
-            "typescript",
-            "nextjs",
-            "strapi",
-            "stripe"
-          ]
-        }
-      },
       {
         "name": "Ce site.",
         "type": "portfolio",

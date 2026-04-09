@@ -5,18 +5,18 @@ import { useGsapReveal } from "@/hooks/useGsapReveal"
 import { useEffect, useRef, useState } from "react"
 
 interface SkillsData {
-  front: string[]
-  back: string[]
-  more: string[]
+  dev: string[]
+  practices: string[]
+  tools: string[]
 }
 
 const categoryColors: Record<string, string> = {
-  front: "var(--accent)",
-  back: "#7dd3fc",
-  more: "#c4b5fd",
+  dev: "var(--accent)",
+  practices: "#c4b5fd",
+  tools: "#7dd3fc",
 }
 
-export default function Skills() {
+export default function Skills({ className = "" }: { className?: string }) {
   const { lang, t } = useLang()
   const [skills, setSkills] = useState<SkillsData | null>(null)
   const sectionRef = useRef<HTMLElement>(null)
@@ -33,24 +33,17 @@ export default function Skills() {
       <section
         id="skills"
         ref={sectionRef}
-        className="section"
-        style={{ minHeight: "100vh" }}
+        className={`section ${className}`}
       />
     )
 
   const categories = [
-    { key: "front", label: "Front-end", items: skills.front },
-    { key: "back", label: "Back-end", items: skills.back },
-    { key: "more", label: t("skills-more"), items: skills.more },
+    { key: "dev", label: t("skills-dev"), items: skills.dev },
+    { key: "practices", label: t("skills-practices"), items: skills.practices },
   ]
 
   return (
-    <section
-      id="skills"
-      ref={sectionRef}
-      className="section"
-      style={{ minHeight: "100vh", display: "flex", alignItems: "center" }}
-    >
+    <section id="skills" ref={sectionRef} className={`section ${className}`}>
       <div className="container">
         <div style={{ marginBottom: "3rem" }}>
           <span className="text-[10px] tracking-[0.25em] uppercase text-[var(--accent)] font-semibold">
@@ -65,7 +58,7 @@ export default function Skills() {
         </div>
 
         {/* Bento grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {categories.map(({ key, label, items }) => (
             <div
               key={key}
