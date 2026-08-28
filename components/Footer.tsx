@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import CookieSettingsButton from "@/components/CookieSettingsButton";
 
 export default function Footer() {
   const [showTop, setShowTop] = useState(false);
@@ -84,9 +85,12 @@ export default function Footer() {
           </div>
 
           {/* Copyright - centered */}
-          <p style={{ textAlign: "center", fontSize: "0.75rem", color: "rgba(245,240,235,0.2)" }}>
-            © {year} Florence Bastaraud
-          </p>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "0.5rem" }}>
+            <p style={{ fontSize: "0.75rem", color: "rgba(245,240,235,0.2)" }}>
+              © {year} Florence Bastaraud
+            </p>
+            <CookieSettingsButton />
+          </div>
 
         </div>
       </footer>
