@@ -13,14 +13,14 @@ import { useEffect, useRef, useState } from "react"
 const COPY = {
   fr: {
     title: "Cookies de mesure d'audience",
-    body: "Ce site utilise des cookies analytiques de mesure d'audience (Google Analytics) pour comprendre comment il est consulté.",
+    body: "Ce site utilise des cookies analytiques de mesure d'audience (Google Analytics) pour comprendre comment il est consulté.",
     accept: "Accepter",
     decline: "Refuser",
     aria: "Gestion des cookies",
   },
   en: {
     title: "Analytics cookies",
-    body: "This site uses analytics cookies (Google Analytics) to measure traffic and understand how it is used.",
+    body: "This website uses analytics cookies (Google Analytics) to measure traffic and understand how it is used.",
     accept: "Accept",
     decline: "Decline",
     aria: "Cookie settings",
