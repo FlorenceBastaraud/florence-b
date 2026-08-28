@@ -1,26 +1,26 @@
 "use client"
 
-import { useEffect, useRef, useState } from "react"
-import { gsap } from "gsap"
-import { useLang } from "@/context/LangContext"
 import {
   CONSENT_STORAGE_KEY,
   clearAnalyticsCookies,
   parseStoredConsent,
   type ConsentValue,
 } from "@/context/CookieConsentContext"
+import { useLang } from "@/context/LangContext"
+import { gsap } from "gsap"
+import { useEffect, useRef, useState } from "react"
 
 const COPY = {
   fr: {
     title: "Cookies de mesure d'audience",
-    body: "Ce site utilise des cookies analytiques de mesure d'audience (Google Analytics) pour comprendre comment il est consulté. Aucun cookie n'est déposé sans votre accord.",
+    body: "Ce site utilise des cookies analytiques de mesure d'audience (Google Analytics) pour comprendre comment il est consulté.",
     accept: "Accepter",
     decline: "Refuser",
     aria: "Gestion des cookies",
   },
   en: {
     title: "Analytics cookies",
-    body: "This site uses analytics cookies (Google Analytics) to measure traffic and understand how it is used. No cookie is set without your consent.",
+    body: "This site uses analytics cookies (Google Analytics) to measure traffic and understand how it is used.",
     accept: "Accept",
     decline: "Decline",
     aria: "Cookie settings",
@@ -55,13 +55,13 @@ export default function CookieBanner() {
         gsap.fromTo(
           backdropRef.current,
           { opacity: 0 },
-          { opacity: 1, duration: 0.3, ease: "power2.out" }
+          { opacity: 1, duration: 0.3, ease: "power2.out" },
         )
       }
       gsap.fromTo(
         panelRef.current,
         { opacity: 0, y: isModal ? 30 : 24, scale: isModal ? 0.98 : 1 },
-        { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "power3.out" }
+        { opacity: 1, y: 0, scale: 1, duration: 0.4, ease: "power3.out" },
       )
     })
     return () => ctx.revert()
@@ -76,10 +76,12 @@ export default function CookieBanner() {
   }, [isModal, visible])
 
   const choose = (next: Exclude<ConsentValue, null>) => {
-    const previous = parseStoredConsent(localStorage.getItem(CONSENT_STORAGE_KEY))
+    const previous = parseStoredConsent(
+      localStorage.getItem(CONSENT_STORAGE_KEY),
+    )
     localStorage.setItem(CONSENT_STORAGE_KEY, next)
     window.dispatchEvent(
-      new CustomEvent("fb:consent-changed", { detail: next })
+      new CustomEvent("fb:consent-changed", { detail: next }),
     )
     setVisible(false)
     setIsModal(false)
@@ -160,7 +162,8 @@ export default function CookieBanner() {
               "var(--accent-dim)")
           }
           onMouseLeave={(e) =>
-            ((e.currentTarget as HTMLElement).style.background = "var(--accent)")
+            ((e.currentTarget as HTMLElement).style.background =
+              "var(--accent)")
           }
         >
           {t.accept}
